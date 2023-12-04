@@ -40,4 +40,11 @@ public class MainTest {
         Assertions.assertEquals(testNum, 0);
     }
 
+    @Test
+    public void testAllNumber() {
+        convertAll convert = new convertAll();
+        String testNum = convert.convertNumber(2000);
+        Assertions.assertEquals(testNum, "MM");
+    }
+
 }

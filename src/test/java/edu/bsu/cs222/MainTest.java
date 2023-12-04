@@ -18,4 +18,12 @@ public class MainTest {
         String testNum = convert.convertAll(5);
         Assertions.assertEquals(testNum, "V");
     }
+
+    @Test
+    public void testTakeOutM() {
+        convertM convert = new convertM();
+        String testNum = convert.convertAll(2000);
+        Assertions.assertEquals(testNum, "MM");
+    }
+
 }

@@ -11,6 +11,7 @@ public class convertI {
     }
 
     public int convertIInt(int i) {
-        return 1;
+        while (i >= 1) i = i - 1;
+        return i;
     }
 }

@@ -22,8 +22,15 @@ public class MainTest {
     @Test
     public void testTakeOutM() {
         convertM convert = new convertM();
-        String testNum = convert.convertAll(2000);
+        String testNum = convert.converttoMString(2000);
         Assertions.assertEquals(testNum, "MM");
+    }
+
+    @Test
+    public void testMNumber() {
+        convertM convert = new convertM();
+        int testNum = convert.converttoMInt(2000);
+        Assertions.assertEquals(testNum, 0);
     }
 
 }

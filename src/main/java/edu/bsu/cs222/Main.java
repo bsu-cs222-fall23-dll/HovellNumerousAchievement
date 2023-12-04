@@ -3,8 +3,12 @@ package edu.bsu.cs222;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!"
+        int startingNumber = 2000;
+        convertM makeM = new convertM();
 
-        );
+        String takeM = makeM.converttoMString(startingNumber);
+        System.out.println(takeM);
+
+
     }
 }

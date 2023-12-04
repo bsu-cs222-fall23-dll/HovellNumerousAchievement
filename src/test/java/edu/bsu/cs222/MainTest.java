@@ -12,4 +12,10 @@ public class MainTest {
         Assertions.assertEquals(testNum,"III");
     }
 
+    @Test
+    public void testConvertToV() {
+        convertV convert = new convertV();
+        String testNum = convert.convertAll(5);
+        Assertions.assertEquals(testNum, "V");
+    }
 }

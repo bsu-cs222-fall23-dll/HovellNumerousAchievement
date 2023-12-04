@@ -13,6 +13,13 @@ public class MainTest {
     }
 
     @Test
+    public void testConvertToINumber() {
+        convertI convert = new convertI();
+        int testNum = convert.convertIInt(3);
+        Assertions.assertEquals(testNum,0);
+    }
+
+    @Test
     public void testConvertToV() {
         convertV convert = new convertV();
         String testNum = convert.convertAll(5);

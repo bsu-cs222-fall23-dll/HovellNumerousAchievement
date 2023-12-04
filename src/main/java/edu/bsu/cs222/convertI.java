@@ -9,4 +9,8 @@ public class convertI {
         return output;
 
     }
+
+    public int convertIInt(int i) {
+        return 1;
+    }
 }

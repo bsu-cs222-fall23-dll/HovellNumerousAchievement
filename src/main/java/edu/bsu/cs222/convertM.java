@@ -12,6 +12,6 @@ public class convertM {
     }
 
     public int converttoMInt(int i) {
-        return 1;
+        return 0;
     }
 }

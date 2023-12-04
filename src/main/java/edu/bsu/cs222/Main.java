@@ -6,7 +6,7 @@ public class Main {
         int startingNumber = 2000;
         convertM makeM = new convertM();
 
-        String takeM = makeM.converttoMString(startingNumber);
+        String takeM = makeM.convertMString(startingNumber);
         System.out.println(takeM);
 
 

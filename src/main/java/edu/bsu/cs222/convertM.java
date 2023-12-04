@@ -1,7 +1,7 @@
 package edu.bsu.cs222;
 
 public class convertM {
-    public String converttoMString(int i) {
+    public String convertMString(int i) {
         String output = "";
         while (i >= 1000) {
             output = output + "M";
@@ -11,7 +11,8 @@ public class convertM {
         return output;
     }
 
-    public int converttoMInt(int i) {
-        return 0;
+    public int convertMInt(int i) {
+        while (i >= 1000) i = i - 1000;
+        return i;
     }
 }

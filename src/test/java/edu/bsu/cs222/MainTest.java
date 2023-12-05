@@ -58,4 +58,11 @@ public class MainTest {
         Assertions.assertEquals(testNum, "CMXCIX");
     }
 
+    @Test
+    public void test1054() {
+        convertAll convert = new convertAll();
+        String testNum = convert.convertNumber(1054);
+        Assertions.assertEquals(testNum, "MLIV");
+    }
+
 }

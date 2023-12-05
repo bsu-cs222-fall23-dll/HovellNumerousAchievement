@@ -51,4 +51,11 @@ public class MainTest {
         }
     }
 
+    @Test
+    public void test999() {
+        convertAll convert = new convertAll();
+        String testNum = convert.convertNumber(999);
+        Assertions.assertEquals(testNum, "CMXCIX");
+    }
+
 }

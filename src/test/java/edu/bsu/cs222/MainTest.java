@@ -39,4 +39,16 @@ public class MainTest {
         Assertions.assertEquals(testNum, "DLV");
     }
 
+    @Test
+    public void testArrays() {
+        convertAll convert = new convertAll();
+        int[] allNumbers = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] allRoman = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+
+        for (int i = 0; i < allNumbers.length; i++) {
+            String testNum = convert.convertNumber(allNumbers[i]);
+            Assertions.assertEquals(testNum, allRoman[i]);
+        }
+    }
+
 }
